@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="11" total="17" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-12T07:39:34 IST" name="APSRTC" finished-at="2023-05-12T07:39:34 IST" duration-ms="142">
+    <groups>
+      <group name="smoke">
+        <method signature="GalleryWallet.ViewGallery()[pri:0, instance:execution.GalleryWallet@3f6f6701]" name="ViewGallery" class="execution.GalleryWallet"/>
+        <method signature="HomeModule.SearchBuses()[pri:0, instance:execution.HomeModule@73e9cf30]" name="SearchBuses" class="execution.HomeModule"/>
+        <method signature="Registration.SuccessfulRegis()[pri:0, instance:execution.Registration@1b11171f]" name="SuccessfulRegis" class="execution.Registration"/>
+        <method signature="Signin.SuccessfSigin(java.lang.String,java.lang.String)[pri:0, instance:execution.Signin@272113c4]" name="SuccessfSigin" class="execution.Signin"/>
+        <method signature="TicketStatus.ServiceStatus()[pri:0, instance:execution.TicketStatus@242b836]" name="ServiceStatus" class="execution.TicketStatus"/>
+        <method signature="TrackTicketsModule.TrackService()[pri:0, instance:test.TrackTicketsModule@3527942a]" name="TrackService" class="test.TrackTicketsModule"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-05-12T07:39:34 IST" name="LoginModule" finished-at="2023-05-12T07:39:34 IST" duration-ms="142">
+      <class name="execution.Signin">
+        <test-method signature="SuccessfSigin(java.lang.String,java.lang.String)[pri:0, instance:execution.Signin@272113c4]" started-at="2023-05-12T07:39:34 IST" name="SuccessfSigin" finished-at="2023-05-12T07:39:34 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url' is required by @Test on method SuccessfSigin but has not been marked @Optional or defined
+in C:\Users\vjred\Desktop\Vjdata\Automation Testing\SeleniumTraining\TestngTutorial15\GroupsSmoke.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url' is required by @Test on method SuccessfSigin but has not been marked @Optional or defined
+in C:\Users\vjred\Desktop\Vjdata\Automation Testing\SeleniumTraining\TestngTutorial15\GroupsSmoke.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuccessfSigin -->
+      </class> <!-- execution.Signin -->
+      <class name="execution.Registration">
+        <test-method signature="SuccessfulRegis()[pri:0, instance:execution.Registration@1b11171f]" started-at="2023-05-12T07:39:34 IST" name="SuccessfulRegis" finished-at="2023-05-12T07:39:34 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuccessfulRegis -->
+      </class> <!-- execution.Registration -->
+      <class name="test.TrackTicketsModule">
+        <test-method signature="TrackService()[pri:0, instance:test.TrackTicketsModule@3527942a]" started-at="2023-05-12T07:39:34 IST" name="TrackService" finished-at="2023-05-12T07:39:34 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrackService -->
+      </class> <!-- test.TrackTicketsModule -->
+      <class name="execution.HomeModule">
+        <test-method signature="SearchBuses()[pri:0, instance:execution.HomeModule@73e9cf30]" started-at="2023-05-12T07:39:34 IST" name="SearchBuses" finished-at="2023-05-12T07:39:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBuses -->
+      </class> <!-- execution.HomeModule -->
+      <class name="execution.TicketStatus">
+        <test-method signature="ServiceStatus()[pri:0, instance:execution.TicketStatus@242b836]" started-at="2023-05-12T07:39:34 IST" name="ServiceStatus" finished-at="2023-05-12T07:39:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ServiceStatus -->
+      </class> <!-- execution.TicketStatus -->
+      <class name="execution.GalleryWallet">
+        <test-method signature="ViewGallery()[pri:0, instance:execution.GalleryWallet@3f6f6701]" started-at="2023-05-12T07:39:34 IST" name="ViewGallery" finished-at="2023-05-12T07:39:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewGallery -->
+      </class> <!-- execution.GalleryWallet -->
+    </test> <!-- LoginModule -->
+  </suite> <!-- APSRTC -->
+</testng-results>

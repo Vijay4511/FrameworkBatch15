@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APSRTC">
+<groups>
+	<run>
+		<include name="smoke"></include>
+	</run>
+
+</groups>
+  <test thread-count="5" name="LoginModule">
+    <classes>
+      <class name="execution.Registration"/>
+      <class name="execution.Signin"/>
+	  <class name="execution.HomeModule"></class>
+	  <class name="execution.TicketStatus"></class>
+	  <class name="execution.GalleryWallet"></class>
+
+	  <class name="test.TrackTicketsModule"></class>
+
+	</classes>
+  </test>
+	
+</suite> <!-- Suite -->

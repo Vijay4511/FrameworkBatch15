@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APSRTC">
+<listeners>
+	<listener class-name="test.ListnersDemo"></listener>
+</listeners>
+  <test thread-count="5" name="LoginModule">
+    <classes>
+      <class name="execution.Registration"/>
+      <class name="execution.Signin"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="HomePageModule">
+	<classes>
+	  <class name="execution.HomeModule"></class>
+	  <class name="execution.TicketStatus"></class>
+	  <class name="execution.GalleryWallet"></class>
+	</classes>
+  </test>
+
+  <test name="TrackModule">
+	<classes>
+	  <class name="test.TrackTicketsModule"></class>
+
+	</classes>
+  </test>
+	
+</suite> <!-- Suite -->
